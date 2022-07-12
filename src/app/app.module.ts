@@ -11,6 +11,7 @@ import { TableComponent } from './components/table/table.component';
 import { StatusChipComponent } from './components/status-chip/status-chip.component';
 import { DropdownButtonComponent } from './components/dropdown-button/dropdown-button.component';
 import { SidebarLinkComponent } from './components/sidebar-link/sidebar-link.component';
+import { CdkTableModule } from '@angular/cdk/table';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { SidebarLinkComponent } from './components/sidebar-link/sidebar-link.com
     DropdownButtonComponent,
     SidebarLinkComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, CdkTableModule],
   providers: [],
   bootstrap: [AppComponent],
 })
