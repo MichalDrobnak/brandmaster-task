@@ -1,1 +1,21 @@
-<p>sidebar works!</p>
+<aside class="sidebar">
+  <p class="text-navbar-section-header sidebar__section-header">SITE ADMIN</p>
+
+  <div class="sidebar__links">
+    <app-sidebar-link icon="assets/img/icons/online.svg" [active]="true">
+      Customer Overview
+    </app-sidebar-link>
+
+    <app-sidebar-link icon="assets/img/icons/list-dot.svg">
+      Reports
+    </app-sidebar-link>
+
+    <app-sidebar-link icon="assets/img/icons/file-add.svg">
+      File Transcodings
+    </app-sidebar-link>
+
+    <app-sidebar-link icon="assets/img/icons/notification.svg">
+      Notification Center
+    </app-sidebar-link>
+  </div>
+</aside>

@@ -10,7 +10,7 @@ import { AddButtonComponent } from './components/add-button/add-button.component
 import { TableComponent } from './components/table/table.component';
 import { StatusChipComponent } from './components/status-chip/status-chip.component';
 import { DropdownButtonComponent } from './components/dropdown-button/dropdown-button.component';
-import { SidebarButtonComponent } from './components/sidebar-button/sidebar-button.component';
+import { SidebarLinkComponent } from './components/sidebar-link/sidebar-link.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +23,10 @@ import { SidebarButtonComponent } from './components/sidebar-button/sidebar-butt
     TableComponent,
     StatusChipComponent,
     DropdownButtonComponent,
-    SidebarButtonComponent
+    SidebarLinkComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

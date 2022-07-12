@@ -1,0 +1,9 @@
+<a class="sidebar-link" [class.sidebar-link--active]="active" href="#">
+  <div *ngIf="icon" class="sidebar-link__left">
+    <img [src]="icon" alt="Link icon" />
+  </div>
+
+  <div class="sidebar-link__right text-navbar-link">
+    <ng-content></ng-content>
+  </div>
+</a>

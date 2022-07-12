@@ -1,0 +1,38 @@
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  height: 40px;
+  padding: 0;
+  background: none;
+  text-decoration: none;
+
+  &:hover,
+  &--active {
+    background: var(--color-bg-selected-item);
+    cursor: pointer;
+  }
+
+  &__left {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__right {
+    margin-left: 22px;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-icon-default);
+
+    &--active {
+      fill: var(--color-primary);
+    }
+  }
+}
