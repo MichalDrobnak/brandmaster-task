@@ -1,3 +1,5 @@
+@import "./styles/font-styles.scss";
+
 :root {
   // Color palette
   --white: #ffffff;
@@ -8,11 +10,11 @@
   --blue-gray-light-2: #eff2f7;
   --blue-gray-light-3: #f9fafb;
   --blue-gray-light-4: #e2e7ee;
-  --blue-gray-regular: #9fa7bb;
-  --blue-gray-dark: #9ea4b6;
-
-  --gray-light: #9fa7bb;
-  --gray-dark: #242b39;
+  --blue-gray-medium-1: #9fa7bb;
+  --blue-gray-medium-2: #9ea4b6;
+  --blue-gray-dark-1: #242b39;
+  --blue-gray-dark-2: #2f3748;
+  --blue-gray-dark-3: #516173;
 
   --green-light: #cffbe9;
   --green-dark: #21985e;
@@ -25,11 +27,13 @@
   --color-bg-selected-item: var(--blue-gray-light-1);
   --color-bg-selected-item-indistinct: var(--blue-gray-light-2);
 
-  --color-icon-default: var(--blue-gray-dark);
+  --color-icon-default: var(--blue-gray-medium-2);
 
-  --color-text-default: var(--gray-dark);
+  --color-text-default: var(--blue-gray-dark-1);
   --color-text-header: var(--black);
-  --color-text-indistinct: var(--blue-gray-regular);
+  --color-text-button: var(--blue-gray-dark-2);
+  --color-text-indistinct: var(--blue-gray-medium-1);
+  --color-text-navbar-section-header: var(--blue-gray-dark-3);
 
   --color-border-default: var(--blue-gray-light-4);
 
@@ -42,20 +46,14 @@
   --font-size-medium: 15px;
   --font-size-xl: 31px;
 
-  // Font sizes - semantic
-  --font-size-h1: var(--font-size-xl);
-  --font-size-text: var(--font-size-regular);
-  --font-size-button: var(--font-size-medium);
-  --font-size-column-header: var(--font-size-small);
-
   // Shadows
   --box-shadow-regular: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  --box-shadow-indistinct: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
 }
 
 html {
+  @extend .text-regular;
   box-sizing: border-box;
-  font-size: var(--font-size-text);
-  color: var(--color-text-default);
 }
 
 *,

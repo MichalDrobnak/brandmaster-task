@@ -1,0 +1,70 @@
+.text-h1 {
+  font-family: Inter;
+  font-size: var(--font-size-xl);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.37px;
+  color: var(--black);
+}
+.text-navbar-button {
+  font-family: Inter;
+  font-size: var(--font-size-medium);
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  color: var(--color-text-default);
+}
+.text-button {
+  font-family: Poppins;
+  font-size: var(--font-size-regular);
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.62;
+  letter-spacing: normal;
+  color: var(--color-text-button);
+}
+.text-regular {
+  font-family: Inter;
+  font-size: var(--font-size-regular);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.62;
+  letter-spacing: normal;
+  color: var(--color-text-default);
+}
+.text-indistinct {
+  font-family: Inter;
+  font-size: var(--font-size-regular);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.62;
+  letter-spacing: normal;
+  color: var(--color-text-indistinct);
+}
+.text-table-column-header {
+  font-family: Inter;
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  color: var(--color-text-navbar-section-header);
+}
+.text-navbar-section-header {
+  font-family: Inter;
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  color: var(--color-text-indistinct);
+}
