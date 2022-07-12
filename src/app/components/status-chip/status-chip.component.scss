@@ -1,0 +1,11 @@
+.status-chip {
+  border-radius: 4px;
+  padding: 2px 5px;
+  text-transform: uppercase;
+
+  &--active {
+    width: fit-content;
+    background: var(--green-light);
+    color: var(--green-dark);
+  }
+}
