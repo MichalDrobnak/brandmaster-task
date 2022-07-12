@@ -40,4 +40,8 @@
       background: var(--color-bg-selected-item);
     }
   }
+
+  &__checkmark {
+    fill: var(--color-primary);
+  }
 }

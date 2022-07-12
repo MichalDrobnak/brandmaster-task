@@ -21,13 +21,15 @@
         (click)="selectKey(key)"
       >
         <span>Something</span>
-        <img
+
+        <svg
+          width="16px"
+          height="16px"
+          class="dropdown__checkmark"
           *ngIf="isSelected(key)"
-          src="assets/img/icons/check.svg"
-          alt="✓"
-          width="16"
-          height="16"
-        />
+        >
+          <use [attr.href]="'assets/img/icons/check.svg#check'"></use>
+        </svg>
       </a>
     </div>
   </div>

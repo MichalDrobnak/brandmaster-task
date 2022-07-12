@@ -13,8 +13,8 @@
     background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
       var(--color-primary);
   }
-}
 
-.plus__path {
-  fill: var(--white);
+  &__icon {
+    fill: var(--white);
+  }
 }

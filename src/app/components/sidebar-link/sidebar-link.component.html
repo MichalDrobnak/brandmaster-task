@@ -1,6 +1,13 @@
 <a class="sidebar-link" [class.sidebar-link--active]="active" href="#">
   <div *ngIf="icon" class="sidebar-link__left">
-    <img [src]="icon" alt="Link icon" />
+    <svg
+      width="16px"
+      height="16px"
+      class="sidebar-link__icon"
+      [class.sidebar-link__icon--active]="active"
+    >
+      <use attr.href="assets/img/icons/{{ icon }}.svg#{{ icon }}"></use>
+    </svg>
   </div>
 
   <div class="sidebar-link__right text-navbar-link">

@@ -13,4 +13,10 @@
     background: none;
     outline: none;
   }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-icon-default);
+  }
 }
