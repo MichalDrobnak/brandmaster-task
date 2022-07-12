@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { SidebarLinkComponent } from '../sidebar-link/sidebar-link.component';
 
 import { SidebarComponent } from './sidebar.component';
 
@@ -8,9 +9,8 @@ describe('SidebarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SidebarComponent ]
-    })
-    .compileComponents();
+      declarations: [SidebarComponent, SidebarLinkComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
