@@ -9,7 +9,14 @@ import { CompaniesDataSource } from './companies.datasource';
 })
 export class TableComponent implements OnInit {
   dataSource = new CompaniesDataSource();
-  displayedColumns = ['customer', 'com_id', 'leg_id', 'size', 'status'];
+  displayedColumns = [
+    'customer',
+    'default',
+    'com_id',
+    'leg_id',
+    'size',
+    'status',
+  ];
 
   constructor() {}
 

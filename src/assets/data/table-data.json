@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "logo": "assets/img/logos/spacesavers.png",
-    "name": "Spacesavers Denmark",
+    "logo": "assets/img/logos/specsavers.png",
+    "name": "Specsavers Denmark",
     "com_id": 1,
     "status": "active",
-    "enabled": false,
-    "lae_id": 1
+    "size": "1.2 TB",
+    "leg_id": 1
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "name": "Yunar",
     "com_id": 2,
     "status": "active",
-    "enabled": false,
-    "lae_id": 2
+    "size": "225 GB",
+    "leg_id": 2
   },
   {
     "id": 3,
@@ -23,8 +23,8 @@
     "name": "Coca-Cola",
     "com_id": 3,
     "status": "active",
-    "enabled": false,
-    "lae_id": 3
+    "size": "119 GB",
+    "leg_id": 3
   },
   {
     "id": 4,
@@ -32,8 +32,8 @@
     "name": "Helly Hansen",
     "com_id": 4,
     "status": "active",
-    "enabled": false,
-    "lae_id": 4
+    "size": "87 GB",
+    "leg_id": 4
   },
   {
     "id": 5,
@@ -41,8 +41,8 @@
     "name": "Brand enterprise",
     "com_id": 5,
     "status": "active",
-    "enabled": true,
-    "lae_id": 5
+    "size": "68 GB",
+    "leg_id": 5
   },
   {
     "id": 6,
@@ -50,8 +50,8 @@
     "name": "Mercedes-Benz Europe",
     "com_id": 6,
     "status": "active",
-    "enabled": false,
-    "lae_id": 6
+    "size": "40 GB",
+    "leg_id": 6
   },
   {
     "id": 7,
@@ -59,7 +59,7 @@
     "name": "BMW Nordic",
     "com_id": 7,
     "status": "active",
-    "enabled": false,
-    "lae_id": 7
+    "size": "26 GB",
+    "leg_id": 7
   }
 ]

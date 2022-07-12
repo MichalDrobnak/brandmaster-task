@@ -1,34 +1,103 @@
-<table cdk-table [dataSource]="dataSource">
+<table cdk-table [dataSource]="dataSource" class="table">
   <!-- Customer Column -->
   <ng-container cdkColumnDef="customer">
-    <th cdk-header-cell *cdkHeaderCellDef>Customer</th>
-    <td cdk-cell *cdkCellDef="let customer">{{ customer.name }}</td>
+    <th
+      cdk-header-cell
+      *cdkHeaderCellDef
+      class="table__header-cell text-table-column-header"
+    >
+      Customer
+    </th>
+    <td cdk-cell *cdkCellDef="let customer" class="table__cell customer-cell">
+      <div
+        class="customer-cell__logo"
+        [style.background-image]="'url(' + customer.logo + ')'"
+      ></div>
+      <span>{{ customer.name }}</span>
+    </td>
+  </ng-container>
+
+  <!-- Defualt Button Column -->
+  <ng-container cdkColumnDef="default">
+    <th
+      cdk-header-cell
+      *cdkHeaderCellDef
+      class="table__header-cell text-table-column-header"
+    ></th>
+    <td cdk-cell *cdkCellDef="let customer" class="table__cell customer-cell">
+      <app-dropdown-button></app-dropdown-button>
+    </td>
   </ng-container>
 
   <!-- Com ID Column -->
   <ng-container cdkColumnDef="com_id">
-    <th cdk-header-cell *cdkHeaderCellDef>Com ID</th>
-    <td cdk-cell *cdkCellDef="let customer">{{ customer.com_id }}</td>
+    <th
+      cdk-header-cell
+      *cdkHeaderCellDef
+      class="table__header-cell text-table-column-header"
+    >
+      Com ID
+    </th>
+    <td cdk-cell *cdkCellDef="let customer" class="table__cell">
+      {{ customer.com_id }}
+    </td>
   </ng-container>
 
   <!-- Leg ID Column -->
   <ng-container cdkColumnDef="leg_id">
-    <th cdk-header-cell *cdkHeaderCellDef>Leg ID</th>
-    <td cdk-cell *cdkCellDef="let customer">{{ customer.leg_id }}</td>
+    <th
+      cdk-header-cell
+      *cdkHeaderCellDef
+      class="table__header-cell text-table-column-header"
+    >
+      Leg ID
+    </th>
+    <td cdk-cell *cdkCellDef="let customer" class="table__cell">
+      {{ customer.leg_id }}
+    </td>
   </ng-container>
 
   <!-- Size Column -->
   <ng-container cdkColumnDef="size">
-    <th cdk-header-cell *cdkHeaderCellDef>Size</th>
-    <td cdk-cell *cdkCellDef="let customer">{{ customer.size }}</td>
+    <th
+      cdk-header-cell
+      *cdkHeaderCellDef
+      class="table__header-cell text-table-column-header"
+    >
+      Size
+    </th>
+    <td cdk-cell *cdkCellDef="let customer" class="table__cell">
+      {{ customer.size }}
+    </td>
   </ng-container>
 
   <!-- Status Column -->
   <ng-container cdkColumnDef="status">
-    <th cdk-header-cell *cdkHeaderCellDef>Status</th>
-    <td cdk-cell *cdkCellDef="let customer">{{ customer.status }}</td>
+    <th
+      cdk-header-cell
+      *cdkHeaderCellDef
+      class="table__header-cell text-table-column-header"
+    >
+      Status
+    </th>
+    <td cdk-cell *cdkCellDef="let customer" class="table__cell">
+      <app-status-chip [status]="customer.status"></app-status-chip>
+    </td>
   </ng-container>
 
-  <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
-  <tr cdk-row *cdkRowDef="let row; columns: displayedColumns"></tr>
+  <thead class="table__header">
+    <tr
+      cdk-header-row
+      *cdkHeaderRowDef="displayedColumns"
+      class="table__header-row"
+    ></tr>
+  </thead>
+
+  <tbody class="table__body">
+    <tr
+      cdk-row
+      *cdkRowDef="let row; columns: displayedColumns"
+      class="table__row"
+    ></tr>
+  </tbody>
 </table>

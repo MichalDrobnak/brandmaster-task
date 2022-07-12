@@ -4,6 +4,6 @@ export interface Customer {
   name: string;
   com_id: number;
   status: string;
-  enabled: boolean;
-  lae_id: number;
+  size: string;
+  leg_id: number;
 }
