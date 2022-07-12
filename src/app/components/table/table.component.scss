@@ -5,6 +5,11 @@
 
 .table__header-cell,
 .table__cell {
+  flex: 2;
+}
+
+.table__header-cell--small,
+.table__cell--small {
   flex: 1;
 }
 

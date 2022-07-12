@@ -40,7 +40,7 @@
     <th
       cdk-header-cell
       *cdkHeaderCellDef
-      class="table__header-cell table__header-cell--sortable text-table-column-header"
+      class="table__header-cell table__header-cell--small table__header-cell--sortable text-table-column-header"
       (click)="sortByColumn('com_id')"
     >
       Com ID
@@ -50,7 +50,11 @@
         [sortOrder]="sortOrder"
       ></app-sort-header>
     </th>
-    <td cdk-cell *cdkCellDef="let customer" class="table__cell">
+    <td
+      cdk-cell
+      *cdkCellDef="let customer"
+      class="table__cell table__cell--small"
+    >
       {{ customer.com_id }}
     </td>
   </ng-container>
@@ -60,7 +64,7 @@
     <th
       cdk-header-cell
       *cdkHeaderCellDef
-      class="table__header-cell table__header-cell--sortable text-table-column-header"
+      class="table__header-cell table__header-cell--small table__header-cell--sortable text-table-column-header"
       (click)="sortByColumn('leg_id')"
     >
       Leg ID
@@ -70,7 +74,11 @@
         [sortOrder]="sortOrder"
       ></app-sort-header>
     </th>
-    <td cdk-cell *cdkCellDef="let customer" class="table__cell">
+    <td
+      cdk-cell
+      *cdkCellDef="let customer"
+      class="table__cell table__cell--small"
+    >
       {{ customer.leg_id }}
     </td>
   </ng-container>
@@ -80,7 +88,7 @@
     <th
       cdk-header-cell
       *cdkHeaderCellDef
-      class="table__header-cell table__header-cell--sortable text-table-column-header"
+      class="table__header-cell table__header-cell--small table__header-cell--sortable text-table-column-header"
       (click)="sortByColumn('size')"
     >
       Size
@@ -90,7 +98,11 @@
         [sortOrder]="sortOrder"
       ></app-sort-header>
     </th>
-    <td cdk-cell *cdkCellDef="let customer" class="table__cell">
+    <td
+      cdk-cell
+      *cdkCellDef="let customer"
+      class="table__cell table__cell--small"
+    >
       {{ customer.size }}
     </td>
   </ng-container>
@@ -100,7 +112,7 @@
     <th
       cdk-header-cell
       *cdkHeaderCellDef
-      class="table__header-cell table__header-cell--sortable text-table-column-header"
+      class="table__header-cell table__header-cell--small table__header-cell--sortable text-table-column-header"
       (click)="sortByColumn('status')"
     >
       Status
@@ -110,7 +122,11 @@
         [sortOrder]="sortOrder"
       ></app-sort-header>
     </th>
-    <td cdk-cell *cdkCellDef="let customer" class="table__cell">
+    <td
+      cdk-cell
+      *cdkCellDef="let customer"
+      class="table__cell table__cell--small"
+    >
       <app-status-chip [status]="customer.status"></app-status-chip>
     </td>
   </ng-container>
