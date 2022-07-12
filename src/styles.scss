@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  // Color palette
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #407cff;
+
+  --blue-gray-light-1: #f1f4f8;
+  --blue-gray-light-2: #eff2f7;
+  --blue-gray-light-3: #f9fafb;
+  --blue-gray-light-4: #e2e7ee;
+  --blue-gray-regular: #9fa7bb;
+  --blue-gray-dark: #9ea4b6;
+
+  --gray-light: #9fa7bb;
+  --gray-dark: #242b39;
+
+  --green-light: #cffbe9;
+  --green-dark: #21985e;
+
+  // Colors - semantic
+  --color-primary: var(--blue);
+
+  --color-bg-app: var(--blue-gray-light-3);
+  --color-bg-components: var(--white);
+  --color-bg-selected-item: var(--blue-gray-light-1);
+  --color-bg-selected-item-indistinct: var(--blue-gray-light-2);
+
+  --color-icon-default: var(--blue-gray-dark);
+
+  --color-text-default: var(--gray-dark);
+  --color-text-header: var(--black);
+  --color-text-indistinct: var(--blue-gray-regular);
+
+  --color-border-default: var(--blue-gray-light-4);
+
+  --color-chip-success-bg: var(--green-light);
+  --color-chip-success-text: var(--green-dark);
+
+  // Font sizes
+  --font-size-regular: 13px;
+  --font-size-small: 10px;
+  --font-size-medium: 15px;
+}
