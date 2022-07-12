@@ -4,9 +4,15 @@
     <th
       cdk-header-cell
       *cdkHeaderCellDef
-      class="table__header-cell text-table-column-header"
+      class="table__header-cell table__header-cell--sortable text-table-column-header"
+      (click)="sortByColumn('customer')"
     >
       Customer
+      <app-sort-header
+        column="customer"
+        [sortedColumn]="sortedColumn"
+        [sortOrder]="sortOrder"
+      ></app-sort-header>
     </th>
     <td cdk-cell *cdkCellDef="let customer" class="table__cell customer-cell">
       <div
@@ -34,9 +40,15 @@
     <th
       cdk-header-cell
       *cdkHeaderCellDef
-      class="table__header-cell text-table-column-header"
+      class="table__header-cell table__header-cell--sortable text-table-column-header"
+      (click)="sortByColumn('com_id')"
     >
       Com ID
+      <app-sort-header
+        column="com_id"
+        [sortedColumn]="sortedColumn"
+        [sortOrder]="sortOrder"
+      ></app-sort-header>
     </th>
     <td cdk-cell *cdkCellDef="let customer" class="table__cell">
       {{ customer.com_id }}
@@ -48,9 +60,15 @@
     <th
       cdk-header-cell
       *cdkHeaderCellDef
-      class="table__header-cell text-table-column-header"
+      class="table__header-cell table__header-cell--sortable text-table-column-header"
+      (click)="sortByColumn('leg_id')"
     >
       Leg ID
+      <app-sort-header
+        column="leg_id"
+        [sortedColumn]="sortedColumn"
+        [sortOrder]="sortOrder"
+      ></app-sort-header>
     </th>
     <td cdk-cell *cdkCellDef="let customer" class="table__cell">
       {{ customer.leg_id }}
@@ -62,9 +80,15 @@
     <th
       cdk-header-cell
       *cdkHeaderCellDef
-      class="table__header-cell text-table-column-header"
+      class="table__header-cell table__header-cell--sortable text-table-column-header"
+      (click)="sortByColumn('size')"
     >
       Size
+      <app-sort-header
+        column="size"
+        [sortedColumn]="sortedColumn"
+        [sortOrder]="sortOrder"
+      ></app-sort-header>
     </th>
     <td cdk-cell *cdkCellDef="let customer" class="table__cell">
       {{ customer.size }}
@@ -76,9 +100,15 @@
     <th
       cdk-header-cell
       *cdkHeaderCellDef
-      class="table__header-cell text-table-column-header"
+      class="table__header-cell table__header-cell--sortable text-table-column-header"
+      (click)="sortByColumn('status')"
     >
       Status
+      <app-sort-header
+        column="status"
+        [sortedColumn]="sortedColumn"
+        [sortOrder]="sortOrder"
+      ></app-sort-header>
     </th>
     <td cdk-cell *cdkCellDef="let customer" class="table__cell">
       <app-status-chip [status]="customer.status"></app-status-chip>

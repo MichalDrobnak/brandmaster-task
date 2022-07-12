@@ -8,8 +8,8 @@ import { CompaniesDataSource } from './companies.datasource';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TableComponent implements OnInit {
-  dataSource = new CompaniesDataSource();
-  displayedColumns = [
+  readonly dataSource = new CompaniesDataSource();
+  readonly displayedColumns = [
     'customer',
     'default',
     'com_id',
@@ -18,7 +18,24 @@ export class TableComponent implements OnInit {
     'status',
   ];
 
+  sortedColumn: string | null = null;
+  sortOrder: 'asc' | 'desc' | null = null;
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  sortByColumn(column: string): void {
+    if (this.sortedColumn === column) {
+      if (this.sortOrder === 'asc') {
+        this.sortOrder = 'desc';
+      } else if (this.sortOrder === 'desc') {
+        this.sortOrder = null;
+        this.sortedColumn = null;
+      }
+    } else {
+      this.sortedColumn = column;
+      this.sortOrder = 'asc';
+    }
+  }
 }

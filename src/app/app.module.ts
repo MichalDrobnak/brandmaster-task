@@ -12,6 +12,7 @@ import { StatusChipComponent } from './components/status-chip/status-chip.compon
 import { DropdownButtonComponent } from './components/dropdown-button/dropdown-button.component';
 import { SidebarLinkComponent } from './components/sidebar-link/sidebar-link.component';
 import { CdkTableModule } from '@angular/cdk/table';
+import { SortHeaderComponent } from './components/sort-header/sort-header.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CdkTableModule } from '@angular/cdk/table';
     StatusChipComponent,
     DropdownButtonComponent,
     SidebarLinkComponent,
+    SortHeaderComponent,
   ],
   imports: [BrowserModule, CdkTableModule],
   providers: [],

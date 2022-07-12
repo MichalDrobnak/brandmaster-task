@@ -1,0 +1,14 @@
+.sort-header {
+  $icon-size: 9px;
+  width: $icon-size;
+  height: $icon-size;
+  transition: 0.2s ease;
+
+  &--asc {
+    transform: rotateX(180deg);
+  }
+
+  &__path {
+    fill: var(--color-primary);
+  }
+}
