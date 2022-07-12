@@ -48,12 +48,17 @@
 
   // Shadows
   --box-shadow-regular: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
-  --box-shadow-indistinct: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+  --box-shadow-indistinct: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 html {
   @extend .text-regular;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg-app);
 }
 
 *,
