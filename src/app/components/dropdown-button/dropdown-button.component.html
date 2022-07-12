@@ -1,1 +1,34 @@
-<p>dropdown-button works!</p>
+<div class="dropdown" (mouseleave)="showContent = false">
+  <button
+    class="dropdown__button text-button"
+    (click)="showContent = !showContent"
+  >
+    Default
+  </button>
+
+  <div
+    class="dropdown__content"
+    [style.display]="showContent ? 'block' : 'none'"
+  >
+    <div class="dropdown__spacer"></div>
+
+    <div class="dropdown__items">
+      <a
+        *ngFor="let key of itemKeys"
+        href="#"
+        class="dropdown__item text-dropdown-item"
+        [class.dropdown__item--selected]="isSelected(key)"
+        (click)="selectKey(key)"
+      >
+        <span>Something</span>
+        <img
+          *ngIf="isSelected(key)"
+          src="assets/img/icons/check.svg"
+          alt="✓"
+          width="16"
+          height="16"
+        />
+      </a>
+    </div>
+  </div>
+</div>
