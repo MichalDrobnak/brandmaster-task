@@ -40,4 +40,26 @@
   --font-size-regular: 13px;
   --font-size-small: 10px;
   --font-size-medium: 15px;
+  --font-size-xl: 31px;
+
+  // Font sizes - semantic
+  --font-size-h1: var(--font-size-xl);
+  --font-size-text: var(--font-size-regular);
+  --font-size-button: var(--font-size-medium);
+  --font-size-column-header: var(--font-size-small);
+
+  // Shadows
+  --box-shadow-regular: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: var(--font-size-text);
+  color: var(--color-text-default);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
