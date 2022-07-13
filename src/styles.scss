@@ -1,11 +1,10 @@
-@import "./styles/font-styles.scss";
+@import "./styles/font-styles";
 
 :root {
   // Color palette
-  --white: #ffffff;
-  --black: #000000;
+  --white: #fff;
+  --black: #000;
   --blue: #407cff;
-
   --blue-gray-light-1: #f1f4f8;
   --blue-gray-light-2: #eff2f7;
   --blue-gray-light-3: #f9fafb;
@@ -15,28 +14,22 @@
   --blue-gray-dark-1: #242b39;
   --blue-gray-dark-2: #2f3748;
   --blue-gray-dark-3: #516173;
-
   --green-light: #cffbe9;
   --green-dark: #21985e;
 
   // Colors - semantic
   --color-primary: var(--blue);
-
   --color-bg-app: var(--blue-gray-light-3);
   --color-bg-components: var(--white);
   --color-bg-selected-item: var(--blue-gray-light-1);
   --color-bg-selected-item-indistinct: var(--blue-gray-light-2);
-
   --color-icon-default: var(--blue-gray-medium-2);
-
   --color-text-default: var(--blue-gray-dark-1);
   --color-text-header: var(--black);
   --color-text-button: var(--blue-gray-dark-2);
   --color-text-indistinct: var(--blue-gray-medium-1);
   --color-text-navbar-section-header: var(--blue-gray-dark-3);
-
   --color-border-default: var(--blue-gray-light-4);
-
   --color-chip-success-bg: var(--green-light);
   --color-chip-success-text: var(--green-dark);
 
@@ -47,15 +40,16 @@
   --font-size-xl: 31px;
 
   // Shadows
-  --box-shadow-regular: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
-  --box-shadow-indistinct: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --box-shadow-regular: 0 2px 8px 0 rgb(0 0 0 / 15%);
+  --box-shadow-indistinct: 0 1px 2px 0 rgb(0 0 0 / 5%);
 
   // Sizes
   --header-height: 44px;
 }
 
 html {
-  @extend .text-regular;
+  @extend %text-regular;
+
   box-sizing: border-box;
 }
 
@@ -65,17 +59,18 @@ body {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 h1 {
-  @extend .text-h1;
+  @extend %text-h1;
+
   margin: 0;
 }
 
 input,
 input::placeholder {
-  @extend .text-indistinct;
+  @extend %text-indistinct;
 }

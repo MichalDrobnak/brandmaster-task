@@ -1,5 +1,6 @@
-.text-h1 {
-  font-family: Inter;
+.text-h1,
+%text-h1 {
+  font-family: Inter, sans-serif;
   font-size: var(--font-size-xl);
   font-weight: normal;
   font-stretch: normal;
@@ -9,8 +10,9 @@
   color: var(--black);
 }
 
-.text-navbar-link {
-  font-family: Inter;
+.text-navbar-link,
+%text-navbar-link {
+  font-family: Inter, sans-serif;
   font-size: var(--font-size-medium);
   font-weight: 500;
   font-stretch: normal;
@@ -20,8 +22,9 @@
   color: var(--color-text-default);
 }
 
-.text-dropdown-item {
-  font-family: Poppins;
+.text-dropdown-item,
+%text-dropdown-item {
+  font-family: Poppins, sans-serif;
   font-size: var(--font-size-regular);
   font-weight: 500;
   font-stretch: normal;
@@ -31,8 +34,9 @@
   color: var(--color-text-button);
 }
 
-.text-button {
-  font-family: Inter;
+.text-button,
+%text-button {
+  font-family: Inter, sans-serif;
   font-size: var(--font-size-regular);
   font-weight: 500;
   font-stretch: normal;
@@ -42,8 +46,9 @@
   color: var(--color-text-button);
 }
 
-.text-regular {
-  font-family: Inter;
+.text-regular,
+%text-regular {
+  font-family: Inter, sans-serif;
   font-size: var(--font-size-regular);
   font-weight: normal;
   font-stretch: normal;
@@ -53,8 +58,9 @@
   color: var(--color-text-default);
 }
 
-.text-indistinct {
-  font-family: Inter;
+.text-indistinct,
+%text-indistinct {
+  font-family: Inter, sans-serif;
   font-size: var(--font-size-regular);
   font-weight: normal;
   font-stretch: normal;
@@ -65,8 +71,9 @@
 }
 
 .text-table-column-header,
-.text-chip {
-  font-family: Inter;
+.text-chip,
+%text-chip {
+  font-family: Inter, sans-serif;
   font-size: var(--font-size-small);
   font-weight: bold;
   font-stretch: normal;
@@ -76,8 +83,9 @@
   color: var(--color-text-navbar-section-header);
 }
 
-.text-navbar-section-header {
-  font-family: Inter;
+.text-navbar-section-header,
+%text-navbar-section-header {
+  font-family: Inter, sans-serif;
   font-size: var(--font-size-small);
   font-weight: 500;
   font-stretch: normal;
